@@ -1,25 +1,25 @@
-#Projeto de Automação de Testes do Site DemoQA
+#Projeto de Automação de Testes do Site DemoQA#
 Este repositório contém um projeto de automação para o site SauceDemo O objetivo é automatizar a execução de testes no site para validar funcionalidades de forma eficiente e precisa.
 
-#Tecnologias Utilizadas
+#Tecnologias Utilizadas#
 - **Java:** *Linguagem de programação usada para desenvolver os scripts de teste.*
 - **Selenium:** *Framework para automação de ações no navegador.*
 - **JUnit:** *Framework para testes unitários em Java, utilizado para estruturar os testes.*
 
-#Tecnologias Necessárias
+#Tecnologias Necessárias#
 **Este projeto de automação requer as seguintes tecnologias:**
 
 - Git
 - Java
 - Maven
 
-#Clonando o Repositório
+#Clonando o Repositório#
 **Para clonar este repositório e ter acesso ao código fonte em sua máquina local, siga os passos no prompt de comando ou terminal.**
 
 - `git clone https://github.com/chdcavalcante/demoqa.git`
 - `cd demoqa`
 
-#Como Executar os Testes
+#Como Executar os Testes#
 **Após clonar o repositório, instale as dependencias e execute os testes.**
 
 - `mvn clean install`
@@ -27,7 +27,7 @@ Este repositório contém um projeto de automação para o site SauceDemo O obje
 - Os testes definidos serão executados, e você poderá ver o resultado diretamente no terminal.
 
 #Contribuição:#
-**Fique à vontade para contribuir para este projeto! Siga estas etapas:**
+ **Fique à vontade para contribuir para este projeto! Siga estas etapas:**
 
 1. Fork do projeto
 2. Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`)
