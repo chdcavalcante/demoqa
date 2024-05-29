@@ -27,4 +27,13 @@ public class DSL {
 		String url = getDriver().getCurrentUrl();
 		return url;
 	}
+
+	public String capturarTexto(String id) {
+		String texto = DriverFactory.getDriver().findElement(By.id(id)).getText();
+		return texto;
+	}
+	public String capturarTexto(By by) {
+		String texto = DriverFactory.getDriver().findElement(by).getText();
+		return texto;
+	}
 }

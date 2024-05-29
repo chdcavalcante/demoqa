@@ -33,11 +33,10 @@ public class HomePage extends BasePage {
 	public void clickBookStoreApplication() {
 		dsl.clicar(By.xpath("//h5[contains(.,'Book Store Application')]"));
 	}
-	
+
 	public void moverAteElemento(String elemento) {
-		WebElement element = getDriver().findElement(By.xpath("//h5[contains(.,'"+elemento+"')]"));
+		WebElement element = getDriver().findElement(By.xpath("//h5[contains(.,'" + elemento + "')]"));
 		((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
-	
 
 }
