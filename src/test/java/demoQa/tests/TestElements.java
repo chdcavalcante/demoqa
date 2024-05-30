@@ -8,11 +8,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
+import demoQa.core.BaseTest;
 import demoQa.core.DSL;
 import demoQa.core.DriverFactory;
 import demonQa.pages.ElementsPage;
 
-public class TestElements {
+public class TestElements extends BaseTest {
 
 	private DSL dsl;
 	private ElementsPage page;
@@ -49,4 +50,23 @@ public class TestElements {
 		assertEquals("Permananet Address :Av. das Nações, nº1155", dsl.capturarTexto(By.xpath("//p[@id='permanentAddress']")));
 		
 	}
+	
+	@Test
+	public void validarRadioButton(){
+		page.clickRadioButton();		
+		page.clickRadioBtn("Yes");
+		assertEquals("You have selected Yes", dsl.capturarTexto(By.xpath("//p[contains(.,'You have selected Yes')]")));
+		
+		page.clickRadioBtn("Impressive");
+		assertEquals("Impressive", dsl.capturarTexto(By.xpath("//span[@class='text-success']")));
+		assertEquals("No", dsl.capturarTexto(By.xpath("//label[@class='custom-control-label disabled']")));
+		
+		
+		
+		
+	
+		
+		
+	}
+	
 }
