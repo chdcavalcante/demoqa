@@ -32,12 +32,38 @@ public class ElementsPage extends BasePage {
 		
 	}
 	
+	public void clicarWebTables() {
+		dsl.clicar("item-3");
+	}
+	
 	public void clickRadioBtn(String radioButton) {
 		dsl.clicar(By.xpath("//label[contains(.,'"+radioButton+"')]"));
+		
+	}
+	
+	public void clickAddWebTables() {
+		dsl.clicar("addNewRecordButton");
+	}
+	
+	public void escreverSearchBox(String texto) {
+		dsl.escrever("searchBox", texto);
 	}
 	
 	public void clickSubmit() {
 		dsl.clicar("submit");
+	}
+	
+	public void preencherCadastroWebTables(String firstName, String lastName, String email, String age, String salary, String department) {
+		dsl.escrever("firstName", firstName);
+		dsl.escrever("lastName", lastName);
+		dsl.escrever("userEmail", email);
+		dsl.escrever("age", age);
+		dsl.escrever("salary", salary);
+		dsl.escrever("department", department);
+		dsl.clicar("submit");
+		
+		
+		
 	}
 	
 }
